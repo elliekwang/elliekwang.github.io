@@ -1,5 +1,3 @@
-# Ellie Wang
-
 ## Projects
 
 **League of Legends - Neeko Rework**
