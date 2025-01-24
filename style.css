@@ -9,6 +9,7 @@ body {
     line-height: 1.6;
     background-color: #f4f4f9;
     color: #333;
+    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 .sidebar {
@@ -45,9 +46,9 @@ body {
 }
 
 section {
-    margin-left: 220px; /* Reserve space for the sidebar */
+    margin-left: 220px; /* Make space for the sidebar */
     padding: 50px;
-    min-height: 100vh; /* Ensure each section takes the full viewport height */
+    min-height: 100vh; /* Ensure each section takes up the full viewport height */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -124,6 +125,6 @@ footer {
 }
 
 html {
-    scroll-behavior: smooth; /* Smooth vertical scrolling */
+    scroll-behavior: smooth; /* Smooth scrolling */
 }
 
