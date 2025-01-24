@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif; /* Updated font */
     line-height: 1.6;
     background-color: #f4f4f9;
     color: #333;
@@ -86,25 +86,33 @@ p {
     line-height: 1.8;
 }
 
-/* About Me section: pictures on left, text on right */
+/* About Me section: pictures on left in a box, text on right */
 .about-section {
     display: flex;
-    align-items: center;
+    align-items: flex-start; /* Align items at the top */
     justify-content: flex-start;
     margin-bottom: 40px;
 }
 
-.about-img {
-    width: 200px; /* Adjust the width of the image as needed */
-    height: auto;
+.about-box {
+    width: 250px; /* Adjust the size of the box as needed */
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     margin-right: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
 .about-text {
     max-width: 600px;
     text-align: left;
+    font-size: 1.1rem;
 }
 
 .projects-grid {
@@ -150,6 +158,7 @@ footer {
 html {
     scroll-behavior: smooth;
 }
+
 
 
 
