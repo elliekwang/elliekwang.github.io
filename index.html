@@ -8,21 +8,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Ellie Wang</h1>
+    <div class="sidebar">
         <nav>
             <ul>
+                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-    </header>
+    </div>
+
+    <section id="home">
+        <div class="container">
+            <h1>Ellie Wang</h1>
+        </div>
+    </section>
 
     <section id="about">
         <div class="container">
             <h2>About Me</h2>
-            <p>Hello! I'm Ellie Wang, a student at UC San Diego majoring in Data Science. I am passionate about data analysis, predictive modeling, and visualization. Here are some of the projects I’ve worked on!</p>
+            <p>Hello! I'm Ellie Wang, a student at UC San Diego majoring in Data Science. I am passionate about data analysis, predictive modeling, and visualization.</p>
         </div>
     </section>
 
@@ -32,24 +38,18 @@
             <div class="projects-grid">
                 <div class="project-card">
                     <h3>Recipe Rating Prediction Using User Reviews</h3>
-                    <p>Engineered features using TF-IDF and sentiment polarity to capture review content and emotional tone. Built baseline models achieving an MAE of 0.6379 with the final NLP model.</p>
+                    <p>Engineered features using TF-IDF and sentiment polarity to capture review content and emotional tone.</p>
                     <a href="https://elliekwang.github.io/project_report.pdf" class="btn">View Project</a>
                 </div>
                 <div class="project-card">
                     <h3>Geospatial Analysis of Airbnb Trends</h3>
-                    <p>Performed exploratory data analysis and created interactive visualizations using D3.js and Leaflet for an intuitive user experience.</p>
+                    <p>Created interactive visualizations using D3.js and Leaflet for an intuitive user experience.</p>
                     <a href="https://elliekwang.github.io/final_proj/" class="btn">View Project</a>
                 </div>
                 <div class="project-card">
                     <h3>Neeko Rework: Analysis and Predictive Modeling</h3>
-                    <p>Trained Logistic Regression and Random Forest models to evaluate the impact of Neeko’s rework and predict team win rates.</p>
+                    <p>Trained Logistic Regression and Random Forest models to predict team win rates.</p>
                     <a href="https://elliekwang.github.io/neeko_rework/" class="btn">View Project</a>
-                </div>
-                <div class="project-card">
-                    <h3>U.S. School’s Disciplinary Action Dashboard</h3>
-                    <p>Extracted and cleaned data, building a Tableau dashboard visualizing suspension trends and potential racial bias.</p>
-                    <!-- Replace the link with the correct Tableau dashboard URL -->
-                    <a href="https://public.tableau.com/views/YourDashboardURL" class="btn">View Project</a>
                 </div>
             </div>
         </div>
@@ -68,5 +68,6 @@
     </footer>
 </body>
 </html>
+
 
 
