@@ -5,6 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ellie Wang - Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        section {
+            margin: 50px;
+        }
+        .project {
+            margin-bottom: 30px;
+        }
+        iframe {
+            width: 100%;
+            height: 400px;
+            border: 1px solid #ccc;
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -25,28 +57,39 @@
 
     <section id="projects">
         <h2>Projects</h2>
+        
+        <!-- Recipe Rating Prediction Project -->
         <div class="project">
             <h3>Recipe Rating Prediction Using User Reviews</h3>
             <p>Engineered features using TF-IDF and sentiment polarity to capture review content and emotional tone. Built baseline models achieving an MAE of 0.6379 with the final NLP model and boosted accuracy by 20% over baselines.</p>
-            <a href="https://github.com/elliekwang/elliekwang.github.io/blob/601cf1ec0e23df7b52093c49b72b12431bec2620/project_report.pdf">View Project</a>
-
+            <!-- Embed a PDF preview using iframe -->
+            <iframe src="https://elliekwang.github.io/project_report.pdf"></iframe>
         </div>
+
+        <!-- Geospatial Analysis of Airbnb Trends Project -->
         <div class="project">
             <h3>Geospatial Analysis of Airbnb Trends</h3>
             <p>Performed exploratory data analysis on data from insideairbnb.org. Created an interactive bar chart, heatmap, and a map using D3.js and Leaflet, complete with tooltips for user-friendly visualization.</p>
-            <a href="hhttps://elliekwang.github.io/final_proj/">View Project</a>
+            <!-- Embed the project webpage -->
+            <iframe src="https://elliekwang.github.io/final_proj/"></iframe>
         </div>
+
+        <!-- Neeko Rework Project -->
         <div class="project">
             <h3>Neeko Rework: Analysis and Predictive Modeling</h3>
             <p>Analyzed League of Legends data to evaluate Neeko’s rework impact. Trained Logistic Regression and Random Forest models to predict team win rates based on in-game features.</p>
-            <a href="https://elliekwang.github.io/neeko_rework/">View Project</a>
+            <!-- Embed the project webpage -->
+            <iframe src="https://elliekwang.github.io/neeko_rework/"></iframe>
         </div>
+
+        <!-- U.S. School’s Disciplinary Action Dashboard -->
         <div class="project">
             <h3>U.S. School’s Disciplinary Action Dashboard</h3>
             <p>Extracted and cleaned data to create a Tableau dashboard visualizing suspension trends and potential bias among racial groups using Python and Tableau.</p>
+            <!-- Example: Embed a Tableau dashboard, replace src with the actual link if available -->
+            <iframe src="https://public.tableau.com/views/YourDashboardURL"></iframe>
         </div>
     </section>
-    
 
     <section id="contact">
         <h2>Contact</h2>
@@ -59,3 +102,4 @@
     </footer>
 </body>
 </html>
+
