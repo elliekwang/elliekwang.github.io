@@ -9,7 +9,6 @@ body {
     line-height: 1.6;
     background-color: #f4f4f9;
     color: #333;
-    display: flex;
 }
 
 .sidebar {
@@ -46,10 +45,9 @@ body {
 }
 
 section {
-    margin-left: 220px;
-    width: calc(100% - 220px);
-    min-height: 100vh;
+    margin-left: 220px; /* Reserve space for the sidebar */
     padding: 50px;
+    min-height: 100vh; /* Ensure each section takes the full viewport height */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -126,6 +124,6 @@ footer {
 }
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; /* Smooth vertical scrolling */
 }
 
