@@ -163,6 +163,12 @@ footer {
 html {
     scroll-behavior: smooth;
 }
+/* Additional styling for smooth transitions */
+#dynamic-word {
+    display: inline-block;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out; /* Smooth fade transition */
+}
 
 
 
