@@ -7,7 +7,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
-    background-color: #1b2a49; /* Darker blue background */
+    background-color: #9abcff; /* Darker blue background */
     color: #a2bff4;
     overflow-x: hidden;
 }
@@ -162,7 +162,7 @@ p {
 footer {
     text-align: center;
     padding: 1.5rem;
-    background-color: #333;
+    background-color: #9abcff;
     color: white;
 }
 
