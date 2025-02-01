@@ -8,7 +8,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
     background-color: #1b2a49; /* Darker blue background */
-    color: #333;
+    color: #a2bff4;
     overflow-x: hidden;
 }
 
@@ -18,7 +18,7 @@ body {
     left: 0;
     width: 200px;
     height: 100%;
-    background-color: #333;
+    background-color: #a2bff4;
     padding-top: 50px;
 }
 
@@ -42,7 +42,7 @@ body {
 
 .sidebar nav ul li a.active {
     text-decoration: underline;
-    background-color: #444;
+    background-color: #a2bff4;
     padding: 0.5rem;
     border-radius: 5px;
 }
@@ -63,7 +63,7 @@ section {
 }
 
 #home {
-    background-color: #333;
+    background-color: #a2bff4;
     color: white;
 }
 
@@ -75,10 +75,16 @@ section {
     font-size: 1.5rem;
     margin-top: 10px;
 }
+/* Additional styling for smooth transitions */
+#dynamic-word {
+    display: inline-block;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out; /* Smooth fade transition */
+}
 
 #about, #projects, #contact {
     background-color: #f4f4f9;
-    color: #333;
+    color: #a2bff4;
 }
 
 h2 {
@@ -142,7 +148,7 @@ p {
     display: inline-block;
     margin-top: 1rem;
     padding: 0.5rem 1rem;
-    background-color: #333;
+    background-color: #a2bff4;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -163,12 +169,7 @@ footer {
 html {
     scroll-behavior: smooth;
 }
-/* Additional styling for smooth transitions */
-#dynamic-word {
-    display: inline-block;
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out; /* Smooth fade transition */
-}
+
 
 
 
