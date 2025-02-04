@@ -75,6 +75,7 @@ section {
     font-size: 1.5rem;
     margin-top: 10px;
 }
+
 /* Additional styling for smooth transitions */
 #dynamic-word {
     display: inline-block;
@@ -84,7 +85,7 @@ section {
 
 #about, #projects, #contact {
     background-color: #f4f4f9;
-    color: #a2bff4;
+    color: #333333; /* Dark gray text color */
 }
 
 h2 {
@@ -95,6 +96,7 @@ h2 {
 p {
     font-size: 1.2rem;
     line-height: 1.8;
+    color: #333333; /* Dark gray text color for paragraphs */
 }
 
 /* About Me section */
@@ -124,7 +126,7 @@ p {
     max-width: 600px;
     text-align: left;
     font-size: 1.1rem;
-    color: #333
+    color: #333333; /* Dark gray text color */
 }
 
 .projects-grid {
@@ -139,7 +141,7 @@ p {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
-    color: #333
+    color: #333333; /* Dark gray text color */
 }
 
 .project-card:hover {
@@ -171,6 +173,7 @@ footer {
 html {
     scroll-behavior: smooth;
 }
+
 
 
 
