@@ -124,6 +124,7 @@ p {
     max-width: 600px;
     text-align: left;
     font-size: 1.1rem;
+    color: #333
 }
 
 .projects-grid {
@@ -138,6 +139,7 @@ p {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    color: #333
 }
 
 .project-card:hover {
