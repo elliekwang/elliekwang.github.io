@@ -104,6 +104,21 @@ section {
     z-index: 3;
 }
 
+#home h1, #home h3 {
+    animation: fadeUp 1s ease forwards;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 /* Additional styling for smooth transitions */
 #dynamic-word {
     display: inline-block;
