@@ -63,8 +63,9 @@ section {
 }
 
 #home {
-    background-color: #a2bff4;
+    position: relative;
     color: white;
+    overflow: hidden;
 }
 
 #home h1 {
@@ -74,6 +75,33 @@ section {
 #home h3.subtitle {
     font-size: 1.5rem;
     margin-top: 10px;
+}
+/* Blurred background image for home */
+#home::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("home_background.JPG"); /* <-- change filename */
+    background-size: cover;
+    background-position: center;
+    filter: blur(12px);
+    transform: scale(1.1); /* prevents blur edges */
+    z-index: 1;
+}
+
+/* Dark overlay for readability */
+#home::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    z-index: 2;
+}
+
+/* Keep home content above blur */
+#home .container {
+    position: relative;
+    z-index: 3;
 }
 
 /* Additional styling for smooth transitions */
