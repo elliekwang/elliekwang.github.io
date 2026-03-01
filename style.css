@@ -155,6 +155,11 @@ p {
 }
 
 /* About Me section */
+#about {
+    padding-top: 80px;   /* increase/decrease as you like */
+    align-items: flex-start; /* pushes content down from top */
+  }
+  
 .about-section {
     display: flex;
     align-items: flex-start;

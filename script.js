@@ -1,21 +1,21 @@
-const words = ["scientist", "engineer", "analyst"];
-let index = 0;
+document.addEventListener("DOMContentLoaded", function () {
 
-function changeWord() {
-    const dynamicWord = document.getElementById("dynamic-word");
+    const words = ["scientist", "engineer", "analyst"];
+    let index = 0;
 
-    // Fade out
-    dynamicWord.style.opacity = 0;
+    function changeWord() {
+        const dynamicWord = document.getElementById("dynamic-word");
+        if (!dynamicWord) return; // prevents errors on other pages
 
-    setTimeout(() => {
-        // Change the word after fade out is done
-        dynamicWord.textContent = words[index];
-        index = (index + 1) % words.length;
+        dynamicWord.style.opacity = 0;
 
-        // Fade in
-        dynamicWord.style.opacity = 1;
-    }, 500); // Match this with the CSS transition duration
-}
+        setTimeout(() => {
+            dynamicWord.textContent = words[index];
+            index = (index + 1) % words.length;
+            dynamicWord.style.opacity = 1;
+        }, 500);
+    }
 
-// Change word every 3 seconds
-setInterval(changeWord, 3000);
+    setInterval(changeWord, 3000);
+
+});
