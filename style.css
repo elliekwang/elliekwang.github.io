@@ -72,40 +72,45 @@ section {
     font-size: 4rem;
 }
 
-#home h3.subtitle {
-    font-size: 1.5rem;
-    margin-top: 10px;
+/* Make the subtitle align using the same centering logic as the name */
+#home .container {
     display: flex;
-    justify-content: center; /* keeps whole subtitle under name */
+    flex-direction: column;
+    align-items: center;   /* centers children consistently */
+    text-align: center;
   }
   
-  /* Wrapper has FIXED width so centering never changes */
+  /* Subtitle sits under H1, centered exactly with it */
+  #home h3.subtitle {
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
+  
+  /* Wrapper is inline-grid, so it shrink-wraps,
+     but we lock the *word slot* width so it never shifts */
   .subtitle-wrapper {
-    display: grid;
-    grid-template-columns: auto 10ch; /* left text + fixed word slot */
+    display: inline-grid;
+    grid-template-columns: auto 10ch; /* fixed slot for changing word */
     column-gap: 0.5ch;
     align-items: baseline;
   }
   
-  /* Left side NEVER moves */
   .static-text {
     text-align: right;
     white-space: nowrap;
   }
   
-  /* Word slot NEVER changes width */
   .word-slot {
     text-align: left;
     white-space: nowrap;
   }
   
-  /* Only this fades */
   #dynamic-word {
     display: inline-block;
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
   }
-
+  
 /* Blurred background image for home */
 #home::before {
     content: "";
