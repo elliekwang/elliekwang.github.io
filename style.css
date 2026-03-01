@@ -79,13 +79,7 @@ section {
 #home h3.subtitle {
     text-align: center;
   }
-  
-  .dynamic-slot {
-    display: inline-block;
-    width: 10ch;          /* enough for "scientist" (9) */
-    text-align: left;     /* keeps the changing word from shifting */
-    white-space: nowrap;
-  }
+
   
   #dynamic-word {
     display: inline-block;
