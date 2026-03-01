@@ -81,7 +81,6 @@ section {
   
   /* Wrapper has FIXED width so centering never changes */
   .subtitle-wrapper {
-    width: 26ch; /* total width of subtitle */
     display: grid;
     grid-template-columns: auto 10ch; /* left text + fixed word slot */
     column-gap: 0.5ch;
