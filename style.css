@@ -72,35 +72,38 @@ section {
     font-size: 4rem;
 }
 
-/* Center the whole subtitle block under your name */
 #home h3.subtitle {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
     font-size: 1.5rem;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center; /* keeps whole subtitle under name */
   }
   
-  /* Two-column layout: left text + reserved slot */
-  .subtitle-inner {
+  /* Wrapper has FIXED width so centering never changes */
+  .subtitle-wrapper {
+    width: 26ch; /* total width of subtitle */
     display: grid;
-    grid-template-columns: auto 10ch; /* 10ch fits "scientist" */
+    grid-template-columns: auto 10ch; /* left text + fixed word slot */
     column-gap: 0.5ch;
     align-items: baseline;
   }
   
-  /* Keep the join point stable */
-  .subtitle-left {
+  /* Left side NEVER moves */
+  .static-text {
     text-align: right;
     white-space: nowrap;
   }
   
-  .dynamic-slot {
+  /* Word slot NEVER changes width */
+  .word-slot {
     text-align: left;
     white-space: nowrap;
   }
   
+  /* Only this fades */
   #dynamic-word {
     display: inline-block;
+    opacity: 1;
     transition: opacity 0.5s ease-in-out;
   }
 
@@ -145,13 +148,6 @@ section {
         opacity: 1;
         transform: translateY(0);
     }
-}
-
-/* Additional styling for smooth transitions */
-#dynamic-word {
-    display: inline-block;
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out; /* Smooth fade transition */
 }
 
 #about, #projects, #contact {
