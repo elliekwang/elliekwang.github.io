@@ -48,7 +48,7 @@ body {
 }
 
 section {
-    margin-left: 220px;
+    margin-left: 200px;
     padding: 30px 50px; /* Reduced padding between sections */
     min-height: 100vh;
     display: flex;
@@ -76,6 +76,18 @@ section {
     font-size: 1.5rem;
     margin-top: 10px;
 }
+/* Prevent subtitle from shifting when the word changes */
+#home h3.subtitle {
+    text-align: center; /* keeps the whole line centered */
+}
+
+.dynamic-slot {
+    display: inline-block;
+    width: 16ch;          /* adjust if needed (e.g., 18ch) */
+    text-align: left;     /* word starts at same spot */
+    white-space: nowrap;
+}
+
 /* Blurred background image for home */
 #home::before {
     content: "";
