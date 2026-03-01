@@ -1,9 +1,11 @@
+/* ===== Reset ===== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* ===== Base ===== */
 body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
@@ -12,6 +14,7 @@ body {
     overflow-x: hidden;
 }
 
+/* ===== Sidebar ===== */
 .sidebar {
     position: fixed;
     top: 0;
@@ -47,10 +50,12 @@ body {
     border-radius: 5px;
 }
 
+/* ===== Sections / Layout ===== */
 section {
     margin-left: 200px;
-    padding: 30px 50px; /* Reduced padding between sections */
+    padding: 30px 50px;
     min-height: 100vh;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -62,65 +67,71 @@ section {
     text-align: center;
 }
 
+/* ===== Home ===== */
 #home {
     position: relative;
     color: white;
     overflow: hidden;
 }
 
+/* Keep home content above blur */
+#home .container {
+    position: relative;
+    z-index: 3;
+}
+
+/* Title */
 #home h1 {
     font-size: 4rem;
 }
 
-/* Make the subtitle align using the same centering logic as the name */
-#home .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;   /* centers children consistently */
-    text-align: center;
-  }
-  
-  /* Subtitle sits under H1, centered exactly with it */
-  #home h3.subtitle {
+/* Subtitle (NO SHIFT VERSION) */
+#home h3.subtitle {
     font-size: 1.5rem;
     margin-top: 10px;
-  }
-  
-  /* Wrapper is inline-grid, so it shrink-wraps,
-     but we lock the *word slot* width so it never shifts */
-  .subtitle-wrapper {
+
+    /* ensure subtitle is centered under H1 */
+    display: flex;
+    justify-content: center;
+}
+
+/*
+  Fixed "slot" so the line never re-centers when the word width changes.
+  We only lock the changing word area, not the entire line.
+*/
+.subtitle-wrapper {
     display: inline-grid;
-    grid-template-columns: auto 10ch; /* fixed slot for changing word */
+    grid-template-columns: auto 10ch; /* 10ch fits "scientist" */
     column-gap: 0.5ch;
     align-items: baseline;
-  }
-  
-  .static-text {
-    text-align: right;
+}
+
+.static-text {
+    text-align: right;       /* locks "aspiring data" against the slot */
     white-space: nowrap;
-  }
-  
-  .word-slot {
-    text-align: left;
+}
+
+.word-slot {
+    text-align: left;        /* keeps changing word anchored */
     white-space: nowrap;
-  }
-  
-  #dynamic-word {
+}
+
+#dynamic-word {
     display: inline-block;
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
-  }
-  
+}
+
 /* Blurred background image for home */
 #home::before {
     content: "";
     position: absolute;
     inset: 0;
-    background-image: url("home_background.JPG"); /* <-- change filename */
+    background-image: url("home_background.JPG");
     background-size: cover;
     background-position: center;
     filter: blur(12px);
-    transform: scale(1.1); /* prevents blur edges */
+    transform: scale(1.1);
     z-index: 1;
 }
 
@@ -133,13 +144,9 @@ section {
     z-index: 2;
 }
 
-/* Keep home content above blur */
-#home .container {
-    position: relative;
-    z-index: 3;
-}
-
-#home h1, #home h3 {
+/* Fade in animation */
+#home h1,
+#home h3 {
     animation: fadeUp 1s ease forwards;
 }
 
@@ -154,11 +161,21 @@ section {
     }
 }
 
-#about, #projects, #contact {
+/* ===== About / Projects / Contact ===== */
+#about,
+#projects,
+#contact {
     background-color: #f4f4f9;
-    color: #333333; /* Dark gray text color */
+    color: #333333;
 }
 
+/* Add top spacing for About page */
+#about {
+    padding-top: 80px;
+    align-items: flex-start; /* overrides section centering */
+}
+
+/* Typography */
 h2 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
@@ -167,20 +184,15 @@ h2 {
 p {
     font-size: 1.2rem;
     line-height: 1.8;
-    color: #333333; /* Dark gray text color for paragraphs */
+    color: #333333;
 }
 
-/* About Me section */
-#about {
-    padding-top: 80px;   /* increase/decrease as you like */
-    align-items: flex-start; /* pushes content down from top */
-  }
-
+/* About layout */
 .about-section {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    margin-bottom: 30px; /* Reduced spacing */
+    margin-bottom: 30px;
 }
 
 .about-box {
@@ -202,9 +214,10 @@ p {
     max-width: 600px;
     text-align: left;
     font-size: 1.1rem;
-    color: #333333; /* Dark gray text color */
+    color: #333333;
 }
 
+/* Projects */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -217,13 +230,14 @@ p {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
-    color: #333333; /* Dark gray text color */
+    color: #333333;
 }
 
 .project-card:hover {
     transform: translateY(-5px);
 }
 
+/* Buttons */
 .btn {
     display: inline-block;
     margin-top: 1rem;
@@ -239,6 +253,7 @@ p {
     background-color: #555;
 }
 
+/* Footer */
 footer {
     text-align: center;
     padding: 1.5rem;
@@ -246,11 +261,8 @@ footer {
     color: white;
 }
 
+/* Smooth scroll */
 html {
     scroll-behavior: smooth;
 }
-
-
-
-
 
