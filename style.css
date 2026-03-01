@@ -76,17 +76,22 @@ section {
     font-size: 1.5rem;
     margin-top: 10px;
 }
-/* Prevent subtitle from shifting when the word changes */
 #home h3.subtitle {
-    text-align: center; /* keeps the whole line centered */
-}
-
-.dynamic-slot {
+    text-align: center;
+  }
+  
+  .dynamic-slot {
     display: inline-block;
-    width: 16ch;          /* adjust if needed (e.g., 18ch) */
-    text-align: left;     /* word starts at same spot */
+    width: 10ch;          /* enough for "scientist" (9) */
+    text-align: left;     /* keeps the changing word from shifting */
     white-space: nowrap;
-}
+  }
+  
+  #dynamic-word {
+    display: inline-block;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
 
 /* Blurred background image for home */
 #home::before {
@@ -159,7 +164,7 @@ p {
     padding-top: 80px;   /* increase/decrease as you like */
     align-items: flex-start; /* pushes content down from top */
   }
-  
+
 .about-section {
     display: flex;
     align-items: flex-start;
