@@ -72,18 +72,35 @@ section {
     font-size: 4rem;
 }
 
+/* Center the whole subtitle block under your name */
 #home h3.subtitle {
-    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
     margin-top: 10px;
-}
-#home h3.subtitle {
-    text-align: center;
+    font-size: 1.5rem;
   }
-
+  
+  /* Two-column layout: left text + reserved slot */
+  .subtitle-inner {
+    display: grid;
+    grid-template-columns: auto 10ch; /* 10ch fits "scientist" */
+    column-gap: 0.5ch;
+    align-items: baseline;
+  }
+  
+  /* Keep the join point stable */
+  .subtitle-left {
+    text-align: right;
+    white-space: nowrap;
+  }
+  
+  .dynamic-slot {
+    text-align: left;
+    white-space: nowrap;
+  }
   
   #dynamic-word {
     display: inline-block;
-    opacity: 1;
     transition: opacity 0.5s ease-in-out;
   }
 
