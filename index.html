@@ -3,100 +3,619 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ellie Wang - Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <title>Ellie Wang | Data Scientist & Analyst</title>
+    <meta name="description" content="Ellie Wang — Data Scientist and Analyst specializing in machine learning, analytics, NLP, and data visualization.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="sidebar">
-        <nav>
-            <ul>
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About Me</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-        </nav>
+
+<!-- ================= NAVIGATION ================= -->
+
+<header class="navbar">
+    <a href="#home" class="logo">EW<span>.</span></a>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <a href="resume.pdf" class="nav-resume" target="_blank">
+        Resume <span>↗</span>
+    </a>
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section id="home" class="hero">
+
+    <div class="hero-background"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <p class="eyebrow">DATA SCIENCE · ANALYTICS · MACHINE LEARNING</p>
+
+        <h1>
+            Hi, I'm <span>Ellie.</span>
+        </h1>
+
+        <h2>
+            I turn data into
+            <span class="rotating-word" id="dynamic-word">insight</span>.
+        </h2>
+
+        <p class="hero-description">
+            Data scientist and analyst passionate about transforming complex
+            data into meaningful insights, predictive models, and practical
+            solutions.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#projects" class="button button-primary">
+                Explore my work <span>↓</span>
+            </a>
+
+            <a href="ellie-wang-resume copy.pdf" class="button button-secondary" target="_blank">
+                View resume <span>↗</span>
+            </a>
+        </div>
+
     </div>
 
-    <section id="home">
-        <div class="home-overlay"></div>
-        <div class="container home-content">
-            <h1>Ellie Wang</h1>
-            <h3 class="subtitle">
-                <span class="subtitle-fixed">
-                  <span class="subtitle-left">aspiring data</span>
-                  <span class="subtitle-right"><span id="dynamic-word">analyst</span></span>
-                </span>
-              </h3>
-        </div>
-    </section>
-    
+    <div class="scroll-indicator">
+        <span></span>
+        Scroll to explore
+    </div>
 
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <div class="about-section">
-                <div class="about-box">
-                    <img src="IMG_6290.jpg" alt="Picture 1" class="about-img">
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about" class="section about">
+
+    <div class="section-label">
+        <span>01</span>
+        ABOUT ME
+    </div>
+
+    <div class="about-grid">
+
+        <div class="about-image-wrapper">
+            <img src="IMG_6290.jpg" alt="Ellie Wang" class="about-image">
+
+            <div class="image-caption">
+                <span>Currently</span>
+                <strong>Building with data.</strong>
+            </div>
+        </div>
+
+        <div class="about-content">
+
+            <p class="large-text">
+                I'm Ellie, a Data Science graduate from
+                <strong>UC San Diego</strong> who enjoys finding the story
+                hidden inside a dataset.
+            </p>
+
+            <p>
+                My work sits at the intersection of analytics, machine
+                learning, and problem solving. I enjoy taking messy,
+                complicated datasets and turning them into something that
+                people can actually understand and use.
+            </p>
+
+            <p>
+                From predicting credit risk using financial transaction data
+                to analyzing equipment usage and building interactive
+                visualizations, I'm especially interested in projects where
+                data can help make better decisions.
+            </p>
+
+            <div class="about-details">
+
+                <div>
+                    <span>Education</span>
+                    <strong>UC San Diego</strong>
+                    <small>B.S. Data Science</small>
                 </div>
-                <div class="about-text">
-                    <p>Hello! My name is Ellie Wang, and I’m a fourth-year Data Science student at UC San Diego. I’m passionate about uncovering meaningful insights from data and using analytics to solve real-world problems. I enjoy transforming complex datasets into clear, actionable stories that drive informed decision-making. </p>
+
+                <div>
+                    <span>Focus</span>
+                    <strong>Data Science</strong>
+                    <small>Analytics · ML · Visualization</small>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="personal-section">
+
+        <div class="personal-image">
+            <img src="DSC04306_Original.jpeg" alt="Ellie enjoying a sunset">
+        </div>
+
+        <div class="personal-text">
+            <span class="small-heading">Outside of data</span>
+
+            <h3>
+                When I'm not staring<br>
+                at a dataset...
+            </h3>
+
+            <p>
+                You'll probably find me chasing sunsets, trying new chicken
+                restaurants, cheering for my favorite sports teams, or
+                discovering new music.
+            </p>
+
+            <div class="interests">
+                <span>🌅 Sunsets</span>
+                <span>🍗 Chicken spots</span>
+                <span>🏀 Sports</span>
+                <span>🎵 Music</span>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= EXPERIENCE ================= -->
+
+<section id="experience" class="section experience">
+
+    <div class="section-label">
+        <span>02</span>
+        EXPERIENCE
+    </div>
+
+    <div class="section-heading">
+        <h2>Where I've worked.</h2>
+        <p>
+            A few places where I've applied data science to real-world
+            problems.
+        </p>
+    </div>
+
+    <div class="experience-list">
+
+        <article class="experience-item">
+
+            <div class="experience-date">
+                2026
+            </div>
+
+            <div class="experience-main">
+
+                <div class="experience-title">
+                    <div>
+                        <h3>Credit Risk Modeling Analyst</h3>
+                        <p>Prism Data × UC San Diego Industry Capstone</p>
+                    </div>
+
+                    <span class="experience-arrow">↗</span>
+                </div>
+
+                <p class="experience-description">
+                    Built a credit risk modeling pipeline using more than
+                    1 million financial records. Engineered financial
+                    behavior features, applied NLP to transaction
+                    descriptions, and trained gradient-boosted models to
+                    predict borrower delinquency.
+                </p>
+
+                <div class="tags">
+                    <span>Python</span>
+                    <span>Pandas</span>
+                    <span>NLP</span>
+                    <span>XGBoost</span>
+                    <span>LightGBM</span>
+                    <span>SHAP</span>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <article class="experience-item">
+
+            <div class="experience-date">
+                2025
+            </div>
+
+            <div class="experience-main">
+
+                <div class="experience-title">
+                    <div>
+                        <h3>Data Science Intern</h3>
+                        <p>EquipmentShare</p>
+                    </div>
+
+                    <span class="experience-arrow">↗</span>
+                </div>
+
+                <p class="experience-description">
+                    Developed data-driven approaches for parts stocking and
+                    equipment analytics using historical asset usage and
+                    failure data. Worked with SQL and statistical modeling
+                    to support inventory decisions.
+                </p>
+
+                <div class="tags">
+                    <span>Python</span>
+                    <span>SQL</span>
+                    <span>Snowflake</span>
+                    <span>Analytics</span>
+                    <span>Forecasting</span>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <article class="experience-item">
+
+            <div class="experience-date">
+                UCSD
+            </div>
+
+            <div class="experience-main">
+
+                <div class="experience-title">
+                    <div>
+                        <h3>B.S. Data Science</h3>
+                        <p>University of California, San Diego</p>
+                    </div>
+                </div>
+
+                <p class="experience-description">
+                    Coursework spanning machine learning, statistics,
+                    programming, algorithms, linear algebra, and data
+                    visualization.
+                </p>
+
+                <div class="tags">
+                    <span>Python</span>
+                    <span>Java</span>
+                    <span>SQL</span>
+                    <span>Machine Learning</span>
+                    <span>Statistics</span>
+                </div>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PROJECTS ================= -->
+
+<section id="projects" class="section projects">
+
+    <div class="section-label">
+        <span>03</span>
+        SELECTED WORK
+    </div>
+
+    <div class="section-heading projects-heading">
+        <div>
+            <h2>Things I've built.</h2>
+        </div>
+
+        <p>
+            A collection of projects exploring machine learning,
+            analytics, visualization, and data storytelling.
+        </p>
+    </div>
+
+
+    <!-- Featured Project -->
+
+    <article class="featured-project">
+
+        <div class="project-number">01</div>
+
+        <div class="featured-project-content">
+
+            <span class="project-type">MACHINE LEARNING · FINTECH</span>
+
+            <h3>Credit Risk Modeling</h3>
+
+            <p>
+                Predicting borrower delinquency using transaction-level
+                financial behavior.
+            </p>
+
+            <div class="project-result">
+                <strong>~0.80</strong>
+                <span>ROC-AUC</span>
+            </div>
+
+            <div class="tags">
+                <span>Python</span>
+                <span>NLP</span>
+                <span>Feature Engineering</span>
+                <span>LightGBM</span>
+                <span>XGBoost</span>
+            </div>
+
+            <a href="https://heiditam.github.io/fairer-credit-cashflow/"
+               class="project-link"
+               target="_blank">
+                View case study <span>↗</span>
+            </a>
+
+        </div>
+
+        <div class="featured-project-visual">
+            <div class="chart-decoration">
+                <div class="chart-line"></div>
+                <div class="chart-line"></div>
+                <div class="chart-line"></div>
+                <div class="chart-line"></div>
+
+                <div class="chart-point point-one"></div>
+                <div class="chart-point point-two"></div>
+                <div class="chart-point point-three"></div>
+            </div>
+        </div>
+
+    </article>
+
+
+    <!-- Project Grid -->
+
+    <div class="project-grid">
+
+        <article class="project-card">
+
+            <div class="project-card-top">
+                <span>02</span>
+                <span>DATA VISUALIZATION</span>
+            </div>
+
+            <h3>Geospatial Analysis of Airbnb Trends</h3>
+
+            <p>
+                Interactive exploration of Airbnb listings using geographic
+                data, D3.js, and Leaflet.
+            </p>
+
+            <div class="tags">
+                <span>D3.js</span>
+                <span>Leaflet</span>
+                <span>JavaScript</span>
+            </div>
+
+            <a href="https://elliekwang.github.io/final_proj/"
+               target="_blank"
+               class="project-link">
+                Explore project <span>↗</span>
+            </a>
+
+        </article>
+
+
+        <article class="project-card">
+
+            <div class="project-card-top">
+                <span>03</span>
+                <span>NLP · MACHINE LEARNING</span>
+            </div>
+
+            <h3>Recipe Rating Prediction</h3>
+
+            <p>
+                Used review text, TF-IDF features, and sentiment analysis to
+                predict recipe ratings.
+            </p>
+
+            <div class="tags">
+                <span>Python</span>
+                <span>TF-IDF</span>
+                <span>NLP</span>
+                <span>scikit-learn</span>
+            </div>
+
+            <a href="https://elliekwang.github.io/project_report.pdf"
+               target="_blank"
+               class="project-link">
+                View project <span>↗</span>
+            </a>
+
+        </article>
+
+
+        <article class="project-card">
+
+            <div class="project-card-top">
+                <span>04</span>
+                <span>PREDICTIVE MODELING</span>
+            </div>
+
+            <h3>Neeko Rework Analysis</h3>
+
+            <p>
+                Analyzed League of Legends gameplay data and built predictive
+                models to explore factors associated with team win rates.
+            </p>
+
+            <div class="tags">
+                <span>Python</span>
+                <span>Logistic Regression</span>
+                <span>Random Forest</span>
+            </div>
+
+            <a href="https://elliekwang.github.io/neeko_rework/"
+               target="_blank"
+               class="project-link">
+                Explore project <span>↗</span>
+            </a>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SKILLS ================= -->
+
+<section id="skills" class="section skills">
+
+    <div class="section-label">
+        <span>04</span>
+        TOOLKIT
+    </div>
+
+    <div class="skills-grid">
+
+        <div class="skills-intro">
+            <h2>Tools I use to<br><em>solve problems.</em></h2>
+
+            <p>
+                I'm always learning, but these are the technologies and
+                concepts I use most often.
+            </p>
+        </div>
+
+        <div class="skills-list">
+
+            <div class="skill-group">
+                <span>01</span>
+                <div>
+                    <h3>Languages</h3>
+                    <p>Python · SQL · Java · JavaScript</p>
                 </div>
             </div>
 
-            <div class="about-section">
-                <div class="about-box">
-                    <img src="DSC04306_Original.jpeg" alt="Picture 2" class="about-img">
-                </div>
-                <div class="about-text">
-                    <p>Beyond academics, I love chasing sunsets, trying new chicken restaurants, cheering on my favorite sports teams, and discovering new music. I strive to combine curiosity with analytical rigor to create thoughtful, impactful solutions through data.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h3>Credit Score Modeling from Financial Transactions</h3>
-                    <p>Built a LightGBM model to predict consumer credit risk using engineered transaction, balance, and income features. Evaluated performance using ROC-AUC, lift curves, and optimized thresholds.</p>
-                    <a href="https://heiditam.github.io/fairer-credit-cashflow/" class="btn">View Project</a>
-                </div>    
-                <div class="project-card">
-                    <h3>Recipe Rating Prediction Using User Reviews</h3>
-                    <p>Engineered features using TF-IDF and sentiment polarity to capture review content and emotional tone.</p>
-                    <a href="https://elliekwang.github.io/project_report.pdf" class="btn">View Project</a>
-                </div>
-                <div class="project-card">
-                    <h3>Geospatial Analysis of Airbnb Trends</h3>
-                    <p>Created interactive visualizations using D3.js and Leaflet for an intuitive user experience.</p>
-                    <a href="https://elliekwang.github.io/final_proj/" class="btn">View Project</a>
-                </div>
-                <div class="project-card">
-                    <h3>Neeko Rework: Analysis and Predictive Modeling</h3>
-                    <p>Trained Logistic Regression and Random Forest models to predict team win rates.</p>
-                    <a href="https://elliekwang.github.io/neeko_rework/" class="btn">View Project</a>
+            <div class="skill-group">
+                <span>02</span>
+                <div>
+                    <h3>Data & Machine Learning</h3>
+                    <p>
+                        Pandas · NumPy · scikit-learn · XGBoost ·
+                        LightGBM · NLP · SHAP
+                    </p>
                 </div>
             </div>
+
+            <div class="skill-group">
+                <span>03</span>
+                <div>
+                    <h3>Visualization</h3>
+                    <p>
+                        D3.js · Plotly · Altair · Tableau ·
+                        Leaflet · Matplotlib
+                    </p>
+                </div>
+            </div>
+
+            <div class="skill-group">
+                <span>04</span>
+                <div>
+                    <h3>Tools & Platforms</h3>
+                    <p>
+                        Git · GitHub · GitLab · Snowflake ·
+                        Looker · Jupyter
+                    </p>
+                </div>
+            </div>
+
         </div>
-    </section>
 
-    <section id="contact">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>Email: elliewang31@gmail.com</p>
-            <p>LinkedIn: linkedin.com/in/elliekwang</p>
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact" class="contact">
+
+    <div class="contact-content">
+
+        <span class="small-heading">05 · GET IN TOUCH</span>
+
+        <h2>
+            Let's build something<br>
+            <em>meaningful.</em>
+        </h2>
+
+        <p>
+            Whether you want to talk data, collaborate on a project,
+            or just say hello, I'd love to hear from you.
+        </p>
+
+        <a href="mailto:elliewang31@gmail.com" class="email-link">
+            elliewang31@gmail.com
+            <span>↗</span>
+        </a>
+
+        <div class="social-links">
+
+            <a href="https://www.linkedin.com/in/elliekwang/"
+               target="_blank">
+                LinkedIn ↗
+            </a>
+
+            <a href="https://github.com/elliekwang"
+               target="_blank">
+                GitHub ↗
+            </a>
+
+            <a href="resume.pdf"
+               target="_blank">
+                Resume ↗
+            </a>
+
         </div>
-    </section>
 
-    <footer>
-        <p>&copy; 2026 Ellie Wang</p>
-    </footer>
+    </div>
 
-    <script src="script.js"></script>
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div>
+        <strong>Ellie Wang</strong>
+        <span>Data Scientist & Analyst</span>
+    </div>
+
+    <p>© 2026 Ellie Wang</p>
+
+    <a href="#home">Back to top ↑</a>
+
+</footer>
+
+
+<script src="script.js"></script>
+
 </body>
 </html>
 
